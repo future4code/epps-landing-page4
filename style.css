@@ -9,8 +9,8 @@
 body{
     background-color: #132235;
     font-family: 'Raleway', sans-serif;
-
 }
+
 
 .menu{
     display: flex;
@@ -42,10 +42,38 @@ a{
 }
 
 .banner{
-    display: flex;
+    /* display: flex;
     justify-content: center;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 50px; */
+    width: 700px;
+    height: 300px;
+    margin: auto;
+    object-fit: cover;
+    border: 3px solid red;
+
+    background-image: url(./img/banner.jpg);
+
+    background-size: 100% 100%;
+
+    /* animation: banner 10 infinite; */
+    /* animation-name: banner;
+    animation-duration: 5s;
+    animation-timing-function: infinite; */
+
+    animation: banner 5s infinite;
+}
+
+
+
+@keyframes banner{
+    0%, 30%{
+        background-image: url(/img/banner.jpg);
+    }
+
+    35%, 65%{
+        background-image: url(./img/cozinha.png);
+    }
 }
 
 .banner > img{
