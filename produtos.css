@@ -1,0 +1,140 @@
+/* ESTILIZAÇÃO PAGINA PROJETOS */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.section-header {
+    width: 100vw;
+    height: 15vh;
+    background-color: #132235;
+    position: fixed;
+}
+
+.menu {
+    padding-top: 20vh;
+}
+
+.titulo-projetos {
+    color: rgba(0, 0, 0, .6);
+    text-shadow: 3px 2px 3px #132235;
+    padding-bottom: 15vh;
+    font-size: 50px;
+    color: #FFF;
+    width: 75vw;
+    word-spacing: 9px;
+    font-weight: bold;
+}
+
+img {
+    height: 15vh;
+}
+
+.img-de-fundo-topo {
+    background-image: url("img.projetos/sala.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 91vh;
+    width: 99vw;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.venha-conhecer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #132235;
+    height: 15vh;
+}
+
+button {
+    height: 5vh;
+    width: 35vw;
+    background-color: #66CDC8;
+    font-variant: small-caps;
+    font-size: 20px;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+}
+
+button:hover {
+    height: 7vh;
+    width: 18vw;
+    font-size: 23px;
+    border: 1px solid white;
+}
+
+.section-projetos {
+    height: 90vh;
+    width: 99vw;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    color: #fff;
+}
+
+#section-branca {
+    background-color: #FFF;
+    color: #132235;
+}
+
+.img-projetos {
+    box-shadow: none;
+    height: 55vh;
+    padding-left: 5px;
+}
+
+.descricao-projetos {
+    padding-left: 9vw;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    font-size: 35px;
+    width: 40vw;
+    height: 50vh;
+}
+
+.main-projetos {
+    height: 90%;
+    width: 98vw;
+}
+
+@media screen and (max-width: 426px) {
+    /* .main-projetos {
+        height: 100%;
+    } */
+    .section-projetos {
+        height: 90vh;
+        width: 99vw;
+        display: grid;
+        grid-template-rows: 1fr 2fr;
+        grid-template-columns: 1fr;
+    }
+    .titulo-projetos {
+        font-size: 15px;
+    }
+    .descricao-projetos {
+        padding-left: 0;
+        font-size: 15px;
+        width: 70vw;
+        height: 30vh;
+    }
+    button {
+        font-size: 10px;
+        width: auto;
+    }
+    .img-de-fundo-topo {
+        height: 50vh;
+        width: 90vw;
+    }
+    .img-projetos {
+        height: 20vh;
+    }
+}
