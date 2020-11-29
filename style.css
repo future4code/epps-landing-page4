@@ -94,7 +94,7 @@ footer{
     justify-content: center;
 }
 
-/* media query */
+/* media query - carol */
 
 /* celulares */
 @media screen and (min-device-width: 320px) and (max-device-width: 420px){
@@ -159,24 +159,26 @@ footer{
 
 }
 
+/*>>> CSS JESSICA <<<*/
+
 /*>>> PÁGINAS: FORMULÁRIO E NOSSO TIME <<<*/
 
 /*>>PAGINA DE FORMULARIO<<*/
 
 
 .section-content > h1 {
-    margin-bottom: 50px;
+    margin-bottom: 10px;
+    text-align: center;
 } 
 
 .section-content {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: #132235;
     height: 90%;
-    width: 100vw;
+    width: 50vw;
     color: white;
+    margin: auto;
 }
 
 h1 {
@@ -298,15 +300,26 @@ label {
 
 
 
-.p3 {
+/* media query - jess */
+
+/* celulares */
+@media screen and (min-device-width: 320px) and (max-device-width: 420px){
+
 
 }
 
- */
 
+/* tablets */
 
- @media screean and (max-width: 426px) {
-     .formulario {
-         width: 100vw;
-     }
- }
+@media screen and (min-device-width: 421px) and (max-device-width: 800px){
+
+   
+}
+
+/* computadores */
+
+@media screen and (min-device-width: 1200px){
+    
+
+}
+
