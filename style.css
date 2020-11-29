@@ -41,26 +41,16 @@ a{
     background-color: black;
 }
 
+
 .banner{
-    /* display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 50px; */
-    width: 700px;
-    height: 300px;
+    width: 80vw;
+    height: 60vh;
     margin: auto;
     object-fit: cover;
-    border: 3px solid red;
-
+    margin-top: 50px;
+    margin-bottom: 10px;
     background-image: url(./img/banner.jpg);
-
     background-size: 100% 100%;
-
-    /* animation: banner 10 infinite; */
-    /* animation-name: banner;
-    animation-duration: 5s;
-    animation-timing-function: infinite; */
-
     animation: banner 5s infinite;
 }
 
@@ -70,16 +60,9 @@ a{
     0%, 30%{
         background-image: url(/img/banner.jpg);
     }
-
     35%, 65%{
-        background-image: url(./img/cozinha.png);
+        background-image: url(./img/banner2.jpg)
     }
-}
-
-.banner > img{
-    width: 800px;
-    height: 500px;
-    border: 10px solid #132235;
 }
 
 
@@ -87,13 +70,15 @@ a{
     color: white;
     width: 500px;
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 5vw;
+    margin: auto;
+    margin-top: 5vw;
 }
 
 .quemsomos{
     text-align: center;
     color: white;
-    margin-bottom: 50px;
+    margin-top: 5vw;
 }
 
 footer{
@@ -101,6 +86,7 @@ footer{
     flex-direction: row;
     justify-content: center;
     width: 100%;
+    margin-top: 5vw;
 }
 
 .icon1, .icon2{
@@ -108,6 +94,69 @@ footer{
     justify-content: center;
 }
 
+/* media query */
 
+/* celulares */
+@media screen and (min-device-width: 320px) and (max-device-width: 420px){
+
+    body{
+        font-size: 10px;
+    }
+
+    .banner{
+        width: 97.5vw;
+        height: 50vh;
+        margin: auto;
+        object-fit: cover;
+        display: flex;
+        justify-content: center;
+        background-image: url(./img/banner.jpg);
+    }
+
+    .tex-area{
+        width: 100%;
+    }
+
+    .menu{
+        width: 100%;
+    }
+
+    section > img{
+        width: 50vw;
+    }
+
+    footer{
+        width: 100%;
+    }
+
+    .icon1, .icon2, .icon3{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+/* tablets */
+
+@media screen and (min-device-width: 421px) and (max-device-width: 800px){
+
+    .banner{
+        margin: auto;
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+
+    .tex-area{
+        width: 100%;
+    }
+   
+}
+
+/* computadores */
+
+@media screen and (min-device-width: 1200px){
+    
+
+}
 
 
