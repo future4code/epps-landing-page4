@@ -82,9 +82,9 @@ footer{
 
 
 
-/*PÁGINAS: FORMULÁRIO E NOSSO TIME*/
+/*>>> PÁGINAS: FORMULÁRIO E NOSSO TIME <<<*/
 
-/*PAGINA DE FORMULARIO*/
+/*>>PAGINA DE FORMULARIO<<*/
 
 
 .section-content > h1 {
@@ -98,7 +98,12 @@ footer{
     justify-content: center;
     background-color: #132235;
     height: 90%;
+    width: 100vw;
     color: white;
+}
+
+h1 {
+    margin: 100px;
 }
 
 .formulario {
@@ -110,20 +115,25 @@ footer{
     width: 45vw;
     color: white;
     border-radius: 20px;
-    padding: 50px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 200px;
 }
 
 input {
-    width: 30vw;
+    width: 40vw;
     margin: 25px;
     height: 4vh;
     font-size: 18px;
     border-radius: 10px;
-    padding: 0 10px;
 }
 
 .enviar {
     width: 10vw;
+}
+
+#botao {
+    text-align: center
 }
 
 label {
@@ -132,29 +142,45 @@ label {
 }
 
 
-/*PAGINA NOSSO TIME*/
+/*>>PAGINA NOSSO TIME<<*/
 
 .time {
     background-color: #132235;
     color: white;
     align-items: flex-start;
     height: 100vh;
-    /* border-radius: solid;
-    border-color: aquamarine; */
     padding: 0 10px;
     font-size: 20px;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: flex-start; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    margin: 100px;
+    margin-bottom: 200px;
 }
 
 .time > p {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    padding: 50px;
+    margin: 30px;
+    align-items: center;
+    }
+
+
+/* >PRIMEIRA IMAGEM< */
+
+.img3 {
+    border-radius: 10px;
+    border-color: #66cdc8;
+    width: 14vw;
+    margin: 45px;
+    height: auto;
 }
 
-#img14 {
+
+/* >SEGUNDA IMAGEM< */
+
+.img14 {
     float: right;
     width: 14vw;
     margin: 45px;
@@ -166,11 +192,8 @@ label {
     border-color: #66cdc8;
 }
 
-/* p.2 {
-    display: flex;
-    align-items: right;
-    float: right;
-} */
+
+/* >TERCEIRA IMAGEM< */
 
 .img2 {
     /* display: flexborder-radius: solid; */
@@ -181,12 +204,32 @@ label {
     height: auto;
 }
 
-.img3 {
-    border-radius: 10px;
-    border-color: #66cdc8
-    width: 14vw;
-    margin: 45px;
-    height: auto;
+.p1 {
+    align-items: center;
+    /* padding-right: 500px;
+    margin-left: 500px;
+    width: 500px; */
 }
 
 
+
+.p2 {
+    /* display: flex;
+    align-items: right;
+    float: right; */
+}
+
+
+
+.p3 {
+
+}
+
+ */
+
+
+ @media screean and (max-width: 426px) {
+     .formulario {
+         width: 100vw;
+     }
+ }
