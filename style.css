@@ -9,8 +9,8 @@
 body{
     background-color: #132235;
     font-family: 'Raleway', sans-serif;
-
 }
+
 
 .menu{
     display: flex;
@@ -41,17 +41,28 @@ a{
     background-color: black;
 }
 
+
 .banner{
-    display: flex;
-    justify-content: center;
+    width: 80vw;
+    height: 60vh;
+    margin: auto;
+    object-fit: cover;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
+    background-image: url(./img/banner.jpg);
+    background-size: 100% 100%;
+    animation: banner 5s infinite;
 }
 
-.banner > img{
-    width: 800px;
-    height: 500px;
-    border: 10px solid #132235;
+
+
+@keyframes banner{
+    0%, 30%{
+        background-image: url(/img/banner.jpg);
+    }
+    35%, 65%{
+        background-image: url(./img/banner2.jpg)
+    }
 }
 
 
@@ -59,13 +70,15 @@ a{
     color: white;
     width: 500px;
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 5vw;
+    margin: auto;
+    margin-top: 5vw;
 }
 
 .quemsomos{
     text-align: center;
     color: white;
-    margin-bottom: 50px;
+    margin-top: 5vw;
 }
 
 footer{
@@ -73,6 +86,7 @@ footer{
     flex-direction: row;
     justify-content: center;
     width: 100%;
+    margin-top: 5vw;
 }
 
 .icon1, .icon2{
@@ -80,7 +94,72 @@ footer{
     justify-content: center;
 }
 
+/* media query - carol */
 
+/* celulares */
+@media screen and (min-device-width: 320px) and (max-device-width: 420px){
+
+    body{
+        font-size: 10px;
+    }
+
+    .banner{
+        width: 97.5vw;
+        height: 50vh;
+        margin: auto;
+        object-fit: cover;
+        display: flex;
+        justify-content: center;
+        background-image: url(./img/banner.jpg);
+    }
+
+    .tex-area{
+        width: 100%;
+    }
+
+    .menu{
+        width: 100%;
+    }
+
+    section > img{
+        width: 50vw;
+    }
+
+    footer{
+        width: 100%;
+    }
+
+    .icon1, .icon2, .icon3{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+/* tablets */
+
+@media screen and (min-device-width: 421px) and (max-device-width: 800px){
+
+    .banner{
+        margin: auto;
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+
+    .tex-area{
+        width: 100%;
+    }
+   
+}
+
+/* computadores */
+
+@media screen and (min-device-width: 1200px){
+    
+
+}
+
+/*>>> CSS JESSICA <<<*/
 
 /*>>> PÁGINAS: FORMULÁRIO E NOSSO TIME <<<*/
 
@@ -88,18 +167,20 @@ footer{
 
 
 .section-content > h1 {
-    margin-bottom: 50px;
+    margin-bottom: 10px;
+    text-align: center;
 } 
 
 .section-content {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     background-color: #132235;
     height: 90%;
     width: 100vw;
     color: white;
+    margin: auto;
 }
 
 h1 {
@@ -148,7 +229,7 @@ label {
     background-color: #132235;
     color: white;
     align-items: flex-start;
-    height: 100vh;
+    height: 100%;
     padding: 0 10px;
     font-size: 20px;
     display: grid;
@@ -165,6 +246,7 @@ label {
     margin: 30px;
     align-items: center;
     }
+
 
 
 /* >PRIMEIRA IMAGEM< */
@@ -202,8 +284,85 @@ label {
 }
 
 
- @media screean and (max-width: 426px) {
-     .formulario {
-         width: 100vw;
-     }
- }
+
+/* media query - jess */
+
+/* celulares */
+@media screen and (max-device-width: 420px){
+
+    h1 {
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+   
+    .time {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        margin: 0;
+        padding: 0; 
+    }
+
+    
+    .img3, .img14, .img2 {
+        width: 50%;
+        margin: 0;
+        padding: 0;
+        height: 35vh;        
+    }
+
+    .img14 {
+    }
+
+    .p1, .p2, .p3 {
+        height: 80vh;
+
+    }
+
+    .section-content {
+        margin: 0;
+        padding-bottom: 30px;
+    }
+
+    .formulario {
+        width: 90vw;
+        margin: 0;
+        padding: 0;
+        margin-top: 40px;
+    }
+
+
+    input {
+        margin: 10px 10px 10px 15px;
+        padding: 0;
+        width: 80vw;
+        align-items: center;
+    }
+
+    #botao {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .enviar {
+        width: 40vw;
+    }
+
+
+
+
+/* tablets */
+/* 
+@media screen and (min-device-width: 421px) and (max-device-width: 800px){
+
+   
+} */
+
+/* computadores 
+
+@media screen and (min-device-width: 1280px){
+    
+
+} */
+
