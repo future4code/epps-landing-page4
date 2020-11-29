@@ -7,32 +7,31 @@
 
 .section-header {
     width: 100vw;
-    height: 15vh;
+    height: 10vh;
     background-color: #132235;
     position: fixed;
 }
 
 .menu {
-    padding-top: 20vh;
+    padding-top: 15vh;
 }
 
 .titulo-projetos {
     color: rgba(0, 0, 0, .6);
     text-shadow: 3px 2px 3px #132235;
-    padding-bottom: 15vh;
+    padding-bottom: 25vh;
     font-size: 50px;
     color: #FFF;
     width: 75vw;
     word-spacing: 9px;
-    font-weight: bold;
 }
 
 img {
-    height: 15vh;
+    height: 10vh;
 }
 
 .img-de-fundo-topo {
-    background-image: url("img.projetos/sala.jpg");
+    background-image: url("img.projetos/local.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -44,40 +43,33 @@ img {
 }
 
 .venha-conhecer {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    justify-items: center;
     align-items: center;
     background-color: #132235;
     height: 15vh;
 }
 
 button {
-    height: 5vh;
-    width: 35vw;
+    height: 7vh;
+    width: 20vw;
     background-color: #66CDC8;
     font-variant: small-caps;
-    font-size: 20px;
-    border: none;
-    color: #fff;
-    border-radius: 5px;
-}
-
-button:hover {
-    height: 7vh;
-    width: 18vw;
     font-size: 23px;
-    border: 1px solid white;
+    border: none;
+    color: #FFF;
+    border-radius: 5px;
 }
 
 .section-projetos {
     height: 90vh;
-    width: 99vw;
+    width: 100vw;
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     align-items: center;
-    color: #fff;
+    color: #FFF;
 }
 
 #section-branca {
@@ -106,19 +98,58 @@ button:hover {
     width: 98vw;
 }
 
-@media screen and (max-width: 426px) {
-    /* .main-projetos {
-        height: 100%;
-    } */
+.descricao-pagina {
+    height: 90vh;
+    width: 100vw;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    color: #132235;
+    font-size: 40px;
+    background-color: #66CDC8;
+}
+
+.p-descricao {
+    width: 80vw;
+}
+
+.teste-imagem {
+    width: 100vw;
+    height: 80vh;
+    object-fit: cover;
+    background-image: url(img.projetos/sala.jpg);
+    background-size: 100% 100%;
+    animation: teste-imagem 9s infinite;
+}
+
+@keyframes teste-imagem {
+    0%,
+    30% {
+        background-image: url(img.projetos/imagem1.png);
+    }
+    35%,
+    65% {
+        background-image: url(img.projetos/imagem2.png);
+    }
+    70%,
+    100% {
+        background-image: url(img.projetos/imagem3.png);
+    }
+}
+
+@media screen and (max-width: 738px) {
+    .menu {
+        height: 8vh;
+    }
     .section-projetos {
-        height: 90vh;
+        height: 80vh;
         width: 99vw;
         display: grid;
         grid-template-rows: 1fr 2fr;
         grid-template-columns: 1fr;
     }
     .titulo-projetos {
-        font-size: 15px;
+        font-size: 3vh;
     }
     .descricao-projetos {
         padding-left: 0;
@@ -128,13 +159,32 @@ button:hover {
     }
     button {
         font-size: 10px;
-        width: auto;
+        width: 25vh;
     }
     .img-de-fundo-topo {
         height: 50vh;
-        width: 90vw;
+        width: 100vw;
     }
     .img-projetos {
-        height: 20vh;
+        height: 35vh;
+    }
+    .img-logo-produtos {
+        height: 10vh;
+    }
+    .venha-conhecer {
+        height: 10vh;
+    }
+    .teste-imagem {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        background-size: 80% 80%;
+        background-repeat: no-repeat;
+        height: 40vh;
+    }
+    .imagens-animação {
+        display: grid;
+        justify-items: center;
+        align-items: center;
     }
 }
