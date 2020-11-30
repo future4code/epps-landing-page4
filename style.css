@@ -193,7 +193,7 @@ h1 {
     flex-direction: column;
     justify-content: center;
     height: 50vh;
-    width: 45vw;
+    width: 43vw;
     color: white;
     border-radius: 20px;
     padding: 10px;
@@ -202,11 +202,12 @@ h1 {
 }
 
 input {
-    width: 40vw;
+    width: 39vw;
     margin: 25px;
     height: 4vh;
     font-size: 18px;
     border-radius: 10px;
+    border: none;
 }
 
 .enviar {
@@ -232,11 +233,6 @@ label {
     height: 100%;
     padding: 0 10px;
     font-size: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    justify-items: center;
-    align-items: center;
     margin: 100px;
     margin-bottom: 200px;
 }
@@ -247,7 +243,16 @@ label {
     align-items: center;
     }
 
+.foto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
+
+.p1, .p2, .p3 {
+    width: 50vw;
+}
 
 /* >PRIMEIRA IMAGEM< */
 
@@ -290,33 +295,54 @@ label {
 /* celulares */
 @media screen and (max-device-width: 420px){
 
-    h1 {
-        margin-bottom: 50px;
-        margin-top: 50px;
-    }
-   
+    /* >PAGINA: NOSSO TIME< */
+
+      
     .time {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
         margin: 0;
         padding: 0; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
+    .foto {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #foto2 {
+        flex-direction: column-reverse;
+        margin-bottom: 50%;
+    }
     
-    .img3, .img14, .img2 {
+
+    .img3 {
         width: 50%;
-        margin: 0;
+        margin-top: 25%;
+    }
+    
+    .img14, .img2 {
+        width: 50%;
+        margin: 10px 10px 30px 10px;
         padding: 0;
         height: 35vh;        
     }
 
-    .img14 {
+    
+    .p1, .p2, .p3 {
+        height: 50vh;
+        margin: 10px;
+        width: 90vw;
     }
 
-    .p1, .p2, .p3 {
-        height: 80vh;
 
+
+    /* >PAGINA: CONTATO< */
+
+    h1 {
+        margin-bottom: 50px;
+        margin-top: 50px;
     }
 
     .section-content {
@@ -333,10 +359,9 @@ label {
 
 
     input {
-        margin: 10px 10px 10px 15px;
+        margin: 10px 10px 10px 17px;
         padding: 0;
         width: 80vw;
-        align-items: center;
     }
 
     #botao {
@@ -349,6 +374,9 @@ label {
         width: 40vw;
     }
 
+    label {
+        font-size: 15px;
+    }
 
 
 
