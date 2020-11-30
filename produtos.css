@@ -144,7 +144,7 @@ button {
     }
     .section-projetos {
         height: 80vh;
-        width: 100vw;
+        width: 99vw;
         display: grid;
         grid-template-rows: 1fr 2fr;
         grid-template-columns: 1fr;
@@ -152,6 +152,7 @@ button {
     .titulo-projetos {
         font-size: 1em;
         width: 85vw;
+        margin: 0;
     }
     .descricao-projetos {
         padding-left: 0;
