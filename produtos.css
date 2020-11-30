@@ -13,7 +13,7 @@
 }
 
 .menu {
-    padding-top: 15vh;
+    padding-top: 10vh;
 }
 
 .titulo-projetos {
@@ -31,7 +31,7 @@ img {
 }
 
 .img-de-fundo-topo {
-    background-image: url("img.projetos/local.jpg");
+    background-image: url("img/local.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -117,7 +117,7 @@ button {
     width: 100vw;
     height: 80vh;
     object-fit: cover;
-    background-image: url(img.projetos/sala.jpg);
+    background-image: url(img/sala.jpg);
     background-size: 100% 100%;
     animation: teste-imagem 9s infinite;
 }
@@ -125,45 +125,48 @@ button {
 @keyframes teste-imagem {
     0%,
     30% {
-        background-image: url(img.projetos/imagem1.png);
+        background-image: url(img/imagem1.png);
     }
     35%,
     65% {
-        background-image: url(img.projetos/imagem2.png);
+        background-image: url(img/imagem2.png);
     }
     70%,
     100% {
-        background-image: url(img.projetos/imagem3.png);
+        background-image: url(img/imagem3.png);
     }
 }
 
 @media screen and (max-width: 738px) {
     .menu {
-        height: 8vh;
+        height: 5vh;
+        font-size: 9px;
     }
     .section-projetos {
         height: 80vh;
-        width: 99vw;
+        width: 100vw;
         display: grid;
         grid-template-rows: 1fr 2fr;
         grid-template-columns: 1fr;
     }
     .titulo-projetos {
-        font-size: 3vh;
+        font-size: 1em;
+        width: 85vw;
     }
     .descricao-projetos {
         padding-left: 0;
         font-size: 15px;
         width: 70vw;
-        height: 30vh;
+        height: 10vh;
+        margin-top: 40px;
     }
     button {
-        font-size: 10px;
+        font-size: 15px;
         width: 25vh;
     }
     .img-de-fundo-topo {
         height: 50vh;
-        width: 100vw;
+        width: 99vw;
     }
     .img-projetos {
         height: 35vh;
@@ -178,7 +181,7 @@ button {
         display: grid;
         justify-items: center;
         align-items: center;
-        background-size: 80% 80%;
+        background-size: 100% 100%;
         background-repeat: no-repeat;
         height: 40vh;
     }
