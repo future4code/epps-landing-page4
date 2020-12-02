@@ -1,0 +1,194 @@
+/* ESTILIZAÇÃO PAGINA PROJETOS */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.section-header {
+    width: 100vw;
+    height: 10vh;
+    background-color: #132235;
+    position: fixed;
+}
+
+.menu {
+    padding-top: 10vh;
+}
+
+.titulo-projetos {
+    color: rgba(0, 0, 0, .6);
+    text-shadow: 3px 2px 3px #132235;
+    padding-bottom: 25vh;
+    font-size: 50px;
+    color: #FFF;
+    width: 75vw;
+    word-spacing: 9px;
+}
+
+img {
+    height: 10vh;
+}
+
+.img-de-fundo-topo {
+    background-image: url("img/local.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 91vh;
+    width: 99vw;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.venha-conhecer {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-color: #132235;
+    height: 15vh;
+}
+
+button {
+    height: 7vh;
+    width: 20vw;
+    background-color: #66CDC8;
+    font-variant: small-caps;
+    font-size: 23px;
+    border: none;
+    color: #FFF;
+    border-radius: 5px;
+}
+
+.section-projetos {
+    height: 90vh;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    color: #FFF;
+}
+
+#section-branca {
+    background-color: #FFF;
+    color: #132235;
+}
+
+.img-projetos {
+    box-shadow: none;
+    height: 55vh;
+    padding-left: 5px;
+}
+
+.descricao-projetos {
+    padding-left: 9vw;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    font-size: 35px;
+    width: 40vw;
+    height: 50vh;
+}
+
+.main-projetos {
+    height: 90%;
+    width: 98vw;
+}
+
+.descricao-pagina {
+    height: 90vh;
+    width: 100vw;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    color: #132235;
+    font-size: 40px;
+    background-color: #66CDC8;
+}
+
+.p-descricao {
+    width: 80vw;
+}
+
+.teste-imagem {
+    width: 100vw;
+    height: 80vh;
+    object-fit: cover;
+    background-image: url(img/sala.jpg);
+    background-size: 100% 100%;
+    animation: teste-imagem 9s infinite;
+}
+
+@keyframes teste-imagem {
+    0%,
+    30% {
+        background-image: url(img/imagem1.png);
+    }
+    35%,
+    65% {
+        background-image: url(img/imagem2.png);
+    }
+    70%,
+    100% {
+        background-image: url(img/imagem3.png);
+    }
+}
+
+@media screen and (max-width: 738px) {
+    .menu {
+        height: 5vh;
+        font-size: 9px;
+    }
+    .section-projetos {
+        height: 80vh;
+        width: 99vw;
+        display: grid;
+        grid-template-rows: 1fr 2fr;
+        grid-template-columns: 1fr;
+    }
+    .titulo-projetos {
+        font-size: 1em;
+        width: 85vw;
+        margin: 0;
+    }
+    .descricao-projetos {
+        padding-left: 0;
+        font-size: 15px;
+        width: 70vw;
+        height: 10vh;
+        margin-top: 40px;
+    }
+    button {
+        font-size: 15px;
+        width: 25vh;
+    }
+    .img-de-fundo-topo {
+        height: 50vh;
+        width: 99vw;
+    }
+    .img-projetos {
+        height: 35vh;
+    }
+    .img-logo-produtos {
+        height: 10vh;
+    }
+    .venha-conhecer {
+        height: 10vh;
+    }
+    .teste-imagem {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        height: 40vh;
+    }
+    .imagens-animação {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+    }
+}

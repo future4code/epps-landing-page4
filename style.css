@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Raleway:wght@100&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #132235;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+.menu{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+li{
+    display: inline;
+    padding: 10px;
+    color: white;
+}
+
+li:hover{
+    background-color: black;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+    display: flex;
+    justify-content: center;
+    display: inline;
+}
+
+.menu>div:hover{
+    background-color: black;
+}
+
+
+.banner{
+    width: 80vw;
+    height: 60vh;
+    margin: auto;
+    object-fit: cover;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    background-image: url(./img/banner.jpg);
+    background-size: 100% 100%;
+    animation: banner 5s infinite;
+}
+
+
+
+@keyframes banner{
+    0%, 30%{
+        background-image: url(/img/banner.jpg);
+    }
+    35%, 65%{
+        background-image: url(./img/banner2.jpg)
+    }
+}
+
+
+.tex-area{
+    color: white;
+    width: 500px;
+    text-align: center;
+    margin-bottom: 5vw;
+    margin: auto;
+    margin-top: 5vw;
+}
+
+.quemsomos{
+    text-align: center;
+    color: white;
+    margin-top: 5vw;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-top: 5vw;
+}
+
+.icon1, .icon2{
+    display: flex;
+    justify-content: center;
+}
+
+/* media query - carol */
+
+/* celulares */
+@media screen and (min-device-width: 320px) and (max-device-width: 420px){
+
+    body{
+        font-size: 10px;
+    }
+
+    .banner{
+        width: 97.5vw;
+        height: 50vh;
+        margin: auto;
+        object-fit: cover;
+        display: flex;
+        justify-content: center;
+        background-image: url(./img/banner.jpg);
+    }
+
+    .tex-area{
+        width: 100%;
+    }
+
+    .menu{
+        width: 100%;
+    }
+
+    section > img{
+        width: 50vw;
+    }
+
+    footer{
+        width: 100%;
+    }
+
+    .icon1, .icon2, .icon3{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+/* tablets */
+
+@media screen and (min-device-width: 421px) and (max-device-width: 800px){
+
+    .banner{
+        margin: auto;
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+
+    .tex-area{
+        width: 100%;
+    }
+   
+}
+
+/* computadores */
+
+@media screen and (min-device-width: 1200px){
+    
+
+}
+
+/*>>> CSS JESSICA <<<*/
+
+/*>>> PÁGINAS: FORMULÁRIO E NOSSO TIME <<<*/
+
+/*>>PAGINA DE FORMULARIO<<*/
+
+
+.section-content > h1 {
+    margin-bottom: 10px;
+    text-align: center;
+} 
+
+.section-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #132235;
+    height: 90%;
+    width: 100vw;
+    color: white;
+    margin: auto;
+}
+
+h1 {
+    margin: 100px;
+}
+
+.formulario {
+    background-color: #66cdc8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50vh;
+    width: 43vw;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 200px;
+}
+
+input {
+    width: 39vw;
+    margin: 25px;
+    height: 4vh;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+}
+
+.enviar {
+    width: 10vw;
+}
+
+#botao {
+    text-align: center
+}
+
+label {
+    font-size: 23px;
+    margin-left: 40px;
+}
+
+
+/*>>PAGINA NOSSO TIME<<*/
+
+.time {
+    background-color: #132235;
+    color: white;
+    align-items: flex-start;
+    height: 100%;
+    padding: 0 10px;
+    font-size: 20px;
+    margin: 100px;
+    margin-bottom: 200px;
+}
+
+.time > p {
+    padding: 50px;
+    margin: 30px;
+    align-items: center;
+    }
+
+.foto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.p1, .p2, .p3 {
+    width: 50vw;
+}
+
+/* >PRIMEIRA IMAGEM< */
+
+.img3 {
+    border-radius: 10px;
+    border-color: #66cdc8;
+    width: 14vw;
+    margin: 45px;
+    height: auto;
+}
+
+
+/* >SEGUNDA IMAGEM< */
+
+.img14 {
+    float: right;
+    width: 14vw;
+    margin: 45px;
+    height: auto;
+    border-radius: 10px;
+    border-radius: solid;
+    border-color: #66cdc8;
+}
+
+
+/* >TERCEIRA IMAGEM< */
+
+.img2 {
+    border-radius: 10px;
+    border-color: #66cdc8;
+    width: 14vw;
+    margin: 45px;
+    height: auto;
+}
+
+
+
+/* media query - jess */
+
+/* celulares */
+@media screen and (max-device-width: 420px){
+
+    /* >PAGINA: NOSSO TIME< */
+
+      
+    .time {
+        margin: 0;
+        padding: 0; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .foto {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #foto2 {
+        flex-direction: column-reverse;
+        margin-bottom: 50%;
+    }
+    
+
+    .img3 {
+        width: 50%;
+        margin-top: 25%;
+    }
+    
+    .img14, .img2 {
+        width: 50%;
+        margin: 10px 10px 30px 10px;
+        padding: 0;
+        height: 35vh;        
+    }
+
+    
+    .p1, .p2, .p3 {
+        height: 50vh;
+        margin: 10px;
+        width: 90vw;
+    }
+
+
+
+    /* >PAGINA: CONTATO< */
+
+    h1 {
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+
+    .section-content {
+        margin: 0;
+        padding-bottom: 30px;
+    }
+
+    .formulario {
+        width: 90vw;
+        margin: 0;
+        padding: 0;
+        margin-top: 40px;
+    }
+
+
+    input {
+        margin: 10px 10px 10px 17px;
+        padding: 0;
+        width: 80vw;
+    }
+
+    #botao {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .enviar {
+        width: 40vw;
+    }
+
+    label {
+        font-size: 15px;
+    }
+
+
+
+/* tablets */
+/* 
+@media screen and (min-device-width: 421px) and (max-device-width: 800px){
+
+   
+} */
+
+/* computadores 
+
+@media screen and (min-device-width: 1280px){
+    
+
+} */
+
